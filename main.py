@@ -21,5 +21,5 @@ for eid,fid in csvreader:
 
 
 counts = collections.Counter(lis)
-new_list = sorted(set(lis), key=counts.get, reverse=True)
+new_list = sorted(set(lis), key=counts.get, reverse=True)[:3]
 print(new_list)
